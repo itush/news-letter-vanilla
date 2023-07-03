@@ -1,0 +1,107 @@
+/*Imporing Roboto (google font)*/
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/*Removing any default margin, padding that might be applied by the browser.
+border-box = The width and height of an element will include its padding and border, rather than just its content box. This can be useful for creating more predictable and consistent layouts.*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+CSS custom properties are being defined using the :root selector. 
+The :root selector selects the root element of the document, 
+which is typically the <html> element.
+*/
+
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;    
+    
+}
+
+.illustration {
+    width: 100vw;
+    height: 40vh;
+    background: url("./images/illustration-sign-up-mobile.svg") center/cover no-repeat;
+    border-radius: 0 0 5% 5%;
+    margin-bottom: 5%;
+}
+
+.description {
+   width: 80vw;
+   margin: 0 auto;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--DarkSlateGrey);
+    margin: 5% 0;
+}
+
+
+p{
+    color: var(--CharcoalGrey);
+    margin: 5% 0;
+}
+
+li{
+    list-style: none;
+    margin-bottom: 2.5%;
+    display: flex;
+    align-items: start;
+    gap: 5%;
+    margin: 10% 0;
+    color: var(--CharcoalGrey);
+}
+
+input{
+    width: 100%;
+    padding: 2.5%;
+    border-radius: .5em;
+    outline: none;
+    border: 1px solid var(--Grey);
+    margin: 2.5% 0;
+}
+
+input:focus{
+    border: 1px solid var(--DarkSlateGrey);
+}
+
+button {
+    width: 100%;
+    background: var(--DarkSlateGrey);
+    color: var(--White);
+    border: none;
+    border-radius: .5em;
+    padding: 2.5%;
+    margin: 2.5% 0;
+    font-weight: bold;
+}
+
+button:hover{
+    background: var(--Tomato);
+    color: var(--White);
+    cursor: pointer;
+   
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
