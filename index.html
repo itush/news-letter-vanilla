@@ -16,79 +16,84 @@
 
   <main>
 
+    <!-- Sign-up form start -->
     <section class="sign-up">
 
-      <!-- Sign-up form start -->
 
       <figure class="illustration"></figure>
 
       <article class="description">
         <h1>Stay updated!</h1>
 
-      <p>
-        Join 60,000+ product managers receiving monthly updates on:
-      </p>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
 
-      <ul>
+        <ul>
 
-        <li>
-          <img src="./images/icon-list.svg" alt="">
-          <span>Product discovery and building what matters</span>
-        </li>
+          <li>
+            <img src="./images/icon-list.svg" alt="">
+            <span>Product discovery and building what matters</span>
+          </li>
 
-        <li>
-          <img src="./images/icon-list.svg" alt="">
-          <span>Measuring to ensure updates are a success</span>
-        </li>
+          <li>
+            <img src="./images/icon-list.svg" alt="">
+            <span>Measuring to ensure updates are a success</span>
+          </li>
 
-        <li>
-          <img src="./images/icon-list.svg" alt="">
-         <span> And much more!</span>
-        </li>
+          <li>
+            <img src="./images/icon-list.svg" alt="">
+            <span> And much more!</span>
+          </li>
 
-      </ul>
+        </ul>
 
-      <form action="#" class="form">
+        <form class="form">
 
-        <label for="email">Email address</label>
+          <header class="form-header">
+            <label for="email">Email address</label> <small class="error-msg"></small>
+          </header>
 
-        <input type="email" name="email" placeholder=" email@company.com" id="email">
+          <input name="email" placeholder=" email@company.com" id="email">
 
-        <button type="submit">Subscribe to monthly newsletter</button>
+          <button type="submit" class="subscribe-btn">Subscribe to monthly newsletter</button>
 
-      </form>
+        </form>
       </article>
 
-      
-     
-
-      
-
-      <!-- Sign-up form end -->
 
     </section>
 
-    <section class="success-message">
-      <!-- Success message start -->
+    <!-- Sign-up form end -->
 
-      Thanks for subscribing!
 
-      A confirmation email has been sent to ash@loremcompany.com.
-      Please open it and click the button inside to confirm your subscription.
+    <!-- Success message start -->
+    
+      <section class="success-message">
 
-      Dismiss message
+        <img src="./images/icon-success.svg" alt="">
 
-      <!-- Success message end -->
+        <h1>Thanks for subscribing!</h1>
+
+        <p>
+          A confirmation email has been sent to <span class="user-email"></span>.
+          Please open it and click the button inside to confirm your subscription.
+        </p>
+
+        <button class="dismiss-btn">Dismiss message</button>
 
     </section>
+
+    <!-- Success message end -->
 
   </main>
 
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://tusharthe.vercel.app/">Tushar Biswas</a>.
   </footer>
-
+  
+  <script src="script.js"></script>
 </body>
 
 </html>
