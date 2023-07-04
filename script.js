@@ -45,5 +45,6 @@ dismissBtn.addEventListener('click', () => {
     successMsg.style.display = 'none';
     signUp.style.display = 'block';
     emailInput.value = '';
+    location.reload();
 
 })
