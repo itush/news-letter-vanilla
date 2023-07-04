@@ -32,7 +32,7 @@ body {
 
 .illustration {
     max-width: 100vw;
-    min-height: 40vh;
+    min-height: 34vh;
     background: url("./images/illustration-sign-up-mobile.svg") center/cover no-repeat;
     border-radius: 0 0 5% 5%;
     margin-bottom: 5%;
