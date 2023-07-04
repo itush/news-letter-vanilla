@@ -26,9 +26,8 @@ which is typically the <html> element.
 
 body {
     font-family: 'Roboto', sans-serif;
-    overflow: hidden;         
+    min-height: 100vh;       
 }
-
 
 
 .illustration {
@@ -107,8 +106,7 @@ body {
  .success-message {
      width: 80vw;
      margin: 50% auto 0 auto;
-     display: none;
-     
+     display: none;     
  }
  
  .user-email{
@@ -125,7 +123,7 @@ body {
  .attribution {
      font-size: 11px;
      text-align: center;
-     margin-top: 10%;
+    
  }
  
  .attribution a {
@@ -139,14 +137,15 @@ body {
          flex-direction: column;
          align-items: center;
          justify-content: center;
-         min-height: 100vh;
-         background: var(--DarkSlateGrey);        
+         background: var(--DarkSlateGrey);    
+        
      }
  
      main {
          min-width: 90vw;         
          background: var(--White);
          border-radius: 5%;
+         /* margin-top: 25%; */
          
      }
  
@@ -181,10 +180,34 @@ body {
  
      .attribution{
          color: var(--Grey);
-         margin-top: 20%;
+        
      }
  
      .attribution a{
          color: var(--Grey);
      }
+ } 
+
+
+ @media only screen and (min-width: 1024px) {
+
+    main {       
+        min-width: 50vw;
+    }
+
+    .success-message{
+        max-width: 26vw;
+        margin: 5% auto;
+       
+    }
+
+    /* .success-text{
+        max-width: 50%;
+       
+    } */
+
+    .dismiss-btn{
+        max-width: 50%;
+    }
+
  } 
