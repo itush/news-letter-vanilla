@@ -1,8 +1,9 @@
 /*Imporing Roboto (google font)*/
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /*Removing any default margin, padding that might be applied by the browser.
-border-box = The width and height of an element will include its padding and border, rather than just its content box. This can be useful for creating more predictable and consistent layouts.*/
+border-box = The width and height of an element will include its padding and border, 
+rather than just its content box. This can be useful for creating more predictable and consistent layouts.*/
 
 * {
     margin: 0;
@@ -26,7 +27,7 @@ which is typically the <html> element.
 
 body {
     font-family: 'Roboto', sans-serif;
-    min-height: 100vh;       
+    min-height: 100vh;
 }
 
 
@@ -41,173 +42,168 @@ body {
 .description {
     max-width: 80vw;
     margin: 0 auto;
- }
- 
- h1{
-     font-size: 2rem;
-     font-weight: 700;
-     color: var(--DarkSlateGrey);
-     margin: 5% 0;
- }
- 
- p{
-     color: var(--CharcoalGrey);
-     margin: 5% 0;
- }
- 
- li{
-     list-style: none;
-     display: flex;
-     align-items: start;
-     gap: 5%;
-     margin: 5% 0;
-     color: var(--CharcoalGrey);
- }
- 
- .form-header{
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--DarkSlateGrey);
+    margin: 5% 0;
+}
+
+p {
+    color: var(--CharcoalGrey);
+    margin: 5% 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    align-items: start;
+    gap: 5%;
+    margin: 5% 0;
+    color: var(--CharcoalGrey);
+}
+
+.form-header {
     display: flex;
     justify-content: space-between;
- }
- 
- input{
-     width: 100%;
-     padding: 5% 0;
-     border-radius: .5em;
-     outline: none;
-     border: 1px solid var(--Grey);
-     margin: 2.5% 0;
- }
- 
- input:focus{
-     border: 1px solid var(--DarkSlateGrey);
- }
- 
- .subscribe-btn, .dismiss-btn {
-     width: 100%;
-     background: var(--DarkSlateGrey);
-     color: var(--White);
-     border: none;
-     border-radius: .5em;
-     padding: 5% 0;
-     margin: 2.5% 0;
-     font-weight: bold;
- }
- 
- .subscribe-btn:hover, .dismiss-btn:hover {
-     background: var(--Tomato);
-     color: var(--White);
-     cursor: pointer;   
- }
- 
- .error-msg{
-     color: var(--Tomato);
- }
- 
- .success-message {
-     width: 80vw;
-     margin: 50% auto 0 auto;
-     display: none;     
- }
- 
- .user-email{
-     color: var(--DarkSlateGrey);
-     font-weight: bold;
- }
- 
- .dismiss-btn{
-     margin-top: 50%;
-     padding: 5% 0;
- }
- 
- 
- .attribution {
-     font-size: 11px;
-     text-align: center;
-    
- }
- 
- .attribution a {
-     color: hsl(228, 45%, 44%);
- }
- 
- @media only screen and (min-width: 600px) {
- 
-     body{
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         background: var(--DarkSlateGrey);    
-        
-     }
- 
-     main {
-         min-width: 90vw;         
-         background: var(--White);
-         border-radius: 5%;
-         /* margin-top: 25%; */
-         
-     }
- 
-     .sign-up {
-         display: flex;
-         flex-direction: row-reverse;
-         padding: 2.5%;
-     }
- 
-     .description {
-         flex: 1;
-         padding: 2.5%;
-     }
- 
-     .illustration{
-         background: url("./images/illustration-sign-up-desktop.svg") center/cover no-repeat;
-         border-radius: 5%;
-         margin-bottom: 0;
-         flex: 1;
-     }
- 
-     .success-message{
-         /* max-width: 60vw; */
-         padding: 0 5%;
-         max-height: 40vh;
-         margin: 5% auto;
-     }
- 
-     .dismiss-btn{
-         margin-top: 0;
-     }
- 
-     .attribution{
-         color: var(--Grey);
-        
-     }
- 
-     .attribution a{
-         color: var(--Grey);
-     }
- } 
+}
+
+input {
+    width: 100%;
+    padding: 5% 0;
+    border-radius: .5em;
+    outline: none;
+    border: 1px solid var(--Grey);
+    margin: 2.5% 0;
+}
+
+input:focus {
+    border: 1px solid var(--DarkSlateGrey);
+}
+
+.subscribe-btn,
+.dismiss-btn {
+    width: 100%;
+    background: var(--DarkSlateGrey);
+    color: var(--White);
+    border: none;
+    border-radius: .5em;
+    padding: 5% 0;
+    margin: 2.5% 0;
+    font-weight: bold;
+}
+
+.subscribe-btn:hover,
+.dismiss-btn:hover {
+    background: var(--Tomato);
+    color: var(--White);
+    cursor: pointer;
+}
+
+.error-msg {
+    color: var(--Tomato);
+}
+
+.success-message {
+    width: 80vw;
+    margin: 50% auto 0 auto;
+    display: none;
+}
+
+.user-email {
+    color: var(--DarkSlateGrey);
+    font-weight: bold;
+}
+
+.dismiss-btn {
+    margin-top: 50%;
+    padding: 5% 0;
+}
 
 
- @media only screen and (min-width: 1024px) {
+.attribution {
+    font-size: 11px;
+    text-align: center;
 
-    main {       
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--DarkSlateGrey);
+
+    }
+
+    main {
+        min-width: 90vw;
+        background: var(--White);
+        border-radius: 5%;
+
+    }
+
+    .sign-up {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2.5%;
+    }
+
+    .description {
+        flex: 1;
+        padding: 2.5%;
+    }
+
+    .illustration {
+        background: url("./images/illustration-sign-up-desktop.svg") center/cover no-repeat;
+        border-radius: 5%;
+        margin-bottom: 0;
+        flex: 1;
+    }
+
+    .success-message {
+        padding: 0 5%;
+        max-height: 40vh;
+        margin: 5% auto;
+    }
+
+    .dismiss-btn {
+        margin-top: 0;
+    }
+
+    .attribution {
+        color: var(--Grey);
+
+    }
+
+    .attribution a {
+        color: var(--Grey);
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    main {
         min-width: 50vw;
     }
 
-    .success-message{
+    .success-message {
         max-width: 26vw;
         margin: 5% auto;
-       
+
     }
 
-    /* .success-text{
-        max-width: 50%;
-       
-    } */
-
-    .dismiss-btn{
+    .dismiss-btn {
         max-width: 50%;
     }
 
- } 
+}
